@@ -20,7 +20,7 @@ desc 'migrate changes to your database'
 task :migrate => :environment db
   Student.create_table
 end
-end
+
 
 desc 'seed the database with some dummy data'
 task :seed do
