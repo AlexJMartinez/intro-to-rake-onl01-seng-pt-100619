@@ -9,3 +9,11 @@ task :hola do
   puts "hola de Rake!"
 end
 end
+
+
+namespace :db
+desc 'migrate changes to your database'
+task :migrate => :environment db
+  Student.create_table
+end
+end
