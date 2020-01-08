@@ -10,7 +10,8 @@ task :hola do
 end
 end
 
-
+task :environment do
+  require_relative
 
 # namespace :db do
 # desc 'migrate changes to your database'
